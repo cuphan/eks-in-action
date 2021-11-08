@@ -18,6 +18,12 @@ terraform {
       version = "2.6.1"
     }
 
+    # https://registry.terraform.io/providers/hashicorp/helm/latest
+    helm = {
+      source  = "hashicorp/helm"
+      version = "2.3.0"
+    }
+
     # https://registry.terraform.io/providers/hashicorp/aws/latest
     aws = {
       source  = "hashicorp/aws"
