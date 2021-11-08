@@ -4,9 +4,4 @@ resource "helm_release" "nginx-ingress" {
   repository = "https://helm.nginx.com/stable"
   chart      = "nginx-ingress"
   version    = "0.11.3"
-
-  set {
-    name  = "controller.setAsDefaultIngress"
-    value = true
-  }
 }
