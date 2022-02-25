@@ -1,5 +1,4 @@
 ---
-
 name: "Code Quality: Terraform"
 
 on:
@@ -19,8 +18,8 @@ jobs:
           fetch-depth: 1
 
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1.2.1
-      
+        uses: hashicorp/setup-terraform@v1
+
       - name: Run `terraform fmt`
         id: fmt
         run: terraform fmt -diff -check -no-color -recursive
